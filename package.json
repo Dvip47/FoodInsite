@@ -1,0 +1,25 @@
+{
+  "name": "foodinsight",
+  "version": "1.0.0",
+  "description": "FoodInsight - AI-Powered Customer Review Analytics",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "food",
+    "analytics",
+    "reviews",
+    "ai",
+    "gemini"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^17.2.3",
+    "mongoose": "^9.0.0"
+  }
+}

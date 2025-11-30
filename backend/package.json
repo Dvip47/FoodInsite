@@ -1,0 +1,32 @@
+{
+  "name": "foodinsight-backend",
+  "version": "1.0.0",
+  "description": "FoodInsight Backend API",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": ["food", "analytics", "reviews", "ai"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "dotenv": "^16.3.1",
+    "@google/generative-ai": "^0.2.1",
+    "bull": "^4.12.0",
+    "redis": "^4.6.12",
+    "morgan": "^1.10.0",
+    "compression": "^1.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
+

@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7
+    container_name: foodinsight-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: foodinsight
+    networks:
+      - foodinsight-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: foodinsight-redis
+    ports:
+      - "6379:6379"
+    networks:
+      - foodinsight-network
+
+volumes:
+  mongodb_data:
+
+networks:
+  foodinsight-network:
+    driver: bridge
+
